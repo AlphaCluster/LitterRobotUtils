@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LitterRobotSplitter", "LitterRobotSplitter\LitterRobotSplitter.csproj", "{A3C4D155-F631-4B4D-AA2A-CA483D6987CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LitterRobotSplitter.Tests", "LitterRobotSplitter.Tests\LitterRobotSplitter.Tests.csproj", "{E9396537-3473-4CCD-B8C9-06945291FCEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3C4D155-F631-4B4D-AA2A-CA483D6987CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C4D155-F631-4B4D-AA2A-CA483D6987CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C4D155-F631-4B4D-AA2A-CA483D6987CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C4D155-F631-4B4D-AA2A-CA483D6987CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9396537-3473-4CCD-B8C9-06945291FCEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9396537-3473-4CCD-B8C9-06945291FCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9396537-3473-4CCD-B8C9-06945291FCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9396537-3473-4CCD-B8C9-06945291FCEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
