@@ -10,7 +10,7 @@ public class Tests
     [Test]
     public void FullPathTest()
     {
-        var weights = CsvParser.ParseFile(new FileInfo("example.csv"), 2022);
+        var weights = CsvParser.ParseFile(new FileInfo("example.csv"), 2023);
         var splitList = CsvParser.SplitForCats(weights, 3);
         var writer = new ExcelSplitWriter();
         writer.WriteToFile(new FileInfo("test.xlsx"), splitList);

@@ -10,7 +10,7 @@ public class CsvParser
     {
         IList<WeightEntry> weights = new List<WeightEntry>();
         var currentYear = startingYear;
-        var lastMonth = 0;
+        var lastMonth = 13;
         using var csv = CsvDataReader.Create(inputFile.FullName);
 
         var activityIndex = csv.GetOrdinal("Activity");
@@ -25,8 +25,8 @@ public class CsvParser
             
             // Parse Date
             var timestamp = DateTime.ParseExact(timestampString, "M/d h:mmtt", CultureInfo.InvariantCulture);
-            if (lastMonth > timestamp.Month)
-                currentYear++;
+            if (lastMonth < timestamp.Month)
+                currentYear--;
             lastMonth = timestamp.Month;
             timestamp = timestamp.AddYears(currentYear - timestamp.Year);
             
