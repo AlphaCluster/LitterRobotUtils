@@ -3,11 +3,6 @@ using System.Globalization;
 namespace LitterRobotSplitter;
 using Sylvan.Data.Csv;
 
-public record WeightEntry
-{
-    public required DateTime Timestamp { get; set; }
-    public required decimal Weight { get; set; }
-}
 
 public class CsvParser
 {
@@ -78,7 +73,7 @@ public class CsvParser
             }
 
             if (currentCat < 0)
-                Console.WriteLine("skipped a cat");
+                Console.WriteLine($"skipped a event {entry.Weight}");
         }
 
         return weightLists;

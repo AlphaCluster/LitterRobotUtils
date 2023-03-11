@@ -12,6 +12,8 @@ public class Tests
     {
         var weights = CsvParser.ParseFile(new FileInfo("example.csv"), 2022);
         var splitList = CsvParser.SplitForCats(weights, 3);
+        var writer = new ExcelSplitWriter();
+        writer.WriteToFile(new FileInfo("test.xlsx"), splitList);
         
         foreach (var weightList in splitList)
         {

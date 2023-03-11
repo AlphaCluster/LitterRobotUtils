@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="ClosedXML" Version="0.100.3" />
       <PackageReference Include="Sylvan.Data.Csv" Version="1.2.7" />
     </ItemGroup>
 
